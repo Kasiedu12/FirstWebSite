@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+         <!-- Required meta tags -->
+         <meta charset="UTF-8">
+         <meta name="description" content="Contact Page">
+         <meta name="keywords" content="contact, address, email">
+         <meta name="author" content="Kwasi Asiedu">
+         <!--CSS-->
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="icon" type="image/png" href="icon.png">
+         <title>
+            Brooklyn Church of Christ
+         </title>
+      </head>
+      <body>
+         <div class="background">
+            <!--Contact Page-->
+            <div class="contact">
+               <!--Navigation Bar-->
+               <div class="nav">
+                  <div>Brooklyn Church of Christ</div>
+                  <ul>
+                     <li><a href="main.html">Home</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="contact-content">
+                  <h1>Contact Us</h1>
+                  <div class="address-holder">
+                     <p>
+                        Have questions? <br>
+                        Fill out the below form and we will get back to you.  
+                     </p>
+                     <div class="row">
+                        <div class="column">
+                           <img src="question2.png" style="width:50%">
+                           <img src="ask.jpg" style="width:50">
+                        </div>
+                        <div class="column">
+                           <!--Once it goes live, hte action form will need to be changed. For local machine, localhosthost wit port number needs to be used-->
+                           <form action="http://localhost:8080/action.php" method="POST" >
+                              <label>Your Name:</label>
+                              <input type="text" name="myName" placeholder="Name...">
+                              <label>Your Email:</label>
+                              <input type="text" name="myEmail" placeholder="Email...">
+                              <label>Message</label>
+                              <input type="text" name="myMessage" placeholder="Message..." style="height:170px" maxlength="800"></textarea>
+                              <input type="submit" value="Submit">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>

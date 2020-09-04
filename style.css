@@ -1,0 +1,219 @@
+body {
+margin:0;
+font-family: sans-serif;
+height: 100%;
+}
+
+.background{
+	background-image: url("blue.jpg") ;
+	background-repeat: repeat-y;
+	background-size: auto;
+}
+
+/*navbar styles*/
+.nav{
+	height: 60px;
+	background: navy;
+}
+.nav div {
+	display: inline-block;
+	position: absolute;
+	left: 1;
+	padding: 15px;
+	font-size: 20px;
+	color: white;
+}
+
+.nav ul{
+	position: absolute;
+	align-items: center;
+	display: flex
+	text-align: center;
+	right: 10px;
+}
+
+.nav ul li{
+	display: inline-block;
+}
+
+.nav ul li a{
+	color: white;
+	padding: 5px
+}
+
+.nav a:hover{
+	color: red;
+}
+
+/*Home Page Styles*/
+.home .text-container {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
+
+}
+.home img{
+	border-radius: 15px;
+	mix-blend-mode: screen;
+}
+
+.home .text-container{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+/*About Styles*/
+.about-content {
+	margin: auto;
+	text-align: center;
+	padding: 70px;
+}
+.about-content h1{
+	font-size: 40px;
+}
+.about-content h2{
+	color: red;
+}
+.about-content img{
+	position: absolute;
+	/*align-self: top right;*/
+	left: 0;
+	top: 0;
+	padding: 25px;
+	mix-blend-mode: screen;
+}
+
+.about-content ul li {
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	list-style-position: inside;
+
+}
+
+.about-content p{
+	color: black;
+	font-size: 20px;
+}
+
+/*Contact Styles*/
+.contact .contact-content{
+	margin: 80px auto 0 auto;
+	text-align: center;
+}
+
+.contact .contact-content h1{
+	font-family: 'Roboto', sans-serif;
+	color: red;	
+}
+
+.contact .contact-content .address-holder {
+	font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row img{
+	border-radius: 15px;
+	mix-blend-mode: screen;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: red;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: purple;
+  left: 1;
+  top: 1;
+}
+
+/*Error Page Details */
+.error_items{
+	justify-content: center;
+}
